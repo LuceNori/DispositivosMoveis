@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_crud/providers/users.dart';
+import 'package:flutter_crud/routes/app_routes.dart';
+import 'package:flutter_crud/views/user_form.dart';
 import 'package:flutter_crud/views/user_list.dart';
 import 'package:provider/provider.dart';
 
@@ -17,7 +19,9 @@ class MinhaAplicacao extends StatelessWidget {
       child: MaterialApp(
         title: "Tarefa Flutter CRUD",
         home: UserList(),
-        debugShowCheckedModeBanner: false,
+        routes:{
+          AppRoutes.USER_FORM: (_)=>UserForm()
+        }
       ),
     );
   }

@@ -1,8 +1,8 @@
 class User{
-  String id;
-  String nome;
-  String email;
-  String avatarURL;
+  final String id;
+  final String nome;
+  final String email;
+  final String avatarURL;
 
   User({
     required this.id,
